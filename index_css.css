@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --main-color:#033a80;
+    --bg-color:#fff;
+    --text-color:#0f0c27;
+    --hover: hsl(260,100%,51%);
+    --big-font:3.2rem;
+    --medium-font:1.8rem;
+    --p-font:0.941rem;
+
+}
+section{
+    padding: 50px 10%;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+body.active {
+    background: rgb(19, 4, 87) /* Your dark mode background color */;
+    color: white/* Your dark mode text color */;
+    /* Add any other styles for dark mode */
+}
+
+*::selection{
+    background: var(--main-color);
+    color: var(--bg-color);
+}
+.heading{
+  text-align:center ;  
+}
+.heading h2{
+    font-size: 2rem;
+}
+.heading span{
+    font-size: var(--p-font);
+    color: rgba(2, 166,70 ) ;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--bg-color);
+    padding: 13px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -4px 8px #ffffff73, 2px 2px 5px black;
+    z-index: 100;
+}
+header.shadow{
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+
+
+body, h1,  p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    font-size: 40px;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #faf7f7;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #43043b;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end; /* Move the navigation to the right */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #10165a;
+}
+
+/* Style the home section */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: url("img/my7.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .home .home-content{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home .text-one{
+    font-size: 25px;
+    color: #aabdc9;
+  }
+  .home .text-two{
+    color: #2476a5;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+  }
+  .home .text-three{
+    font-size: 40px;
+    margin: 5px 0;
+    color: #4070f4;
+  }
+  .home .text-four{
+    font-size: 23px;
+    margin: 5px 0;
+    color: #98abb6;
+  }
+  .home .button{
+    margin: 14px 0;
+  }
+  .home .button button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #05184c;
+    color: #d8d3d3;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+  }
+  .home .button button:hover{
+    border-color: #4070f4;
+    background-color: #fff;
+    color: #4070f4;
+  }
+/* Style an alternative home design */
+.home-alternative {
+    background-color: #000000;
+    color: #fff;
+    background-image: url("img/my10.jpg");
+}
+
+.home-alternative h1 {
+    font-size: 32px;
+    color: #303f41;
+}
+
+.home-alternative p {
+    font-size: 16px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 28px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    .home-alternative h1 {
+        font-size: 24px;
+    }
+
+    .home-alternative p {
+        font-size: 14px;
+    }
+}
+
+/* Style the about section */
+#about {
+    background-color: #c3c1ec;
+    padding: 50px 0;
+    text-align:left;
+}
+
+.about-content {
+    max-width:fit-content;
+    margin: 0 auto;
+}
+
+.about-details {
+    display: flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left img {
+    max-width:20%;
+    border-radius: 1%;
+}
+
+.right {
+    text-align:right;
+}
+
+#about h2 {
+    font-size: 50px;
+    color: #0d0c0c;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #161616;
+    font-weight: 200;
+    font-weight: 300;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .about-details {
+        flex-direction: column;
+    }
+    
+    .left img {
+        width: 50%;
+        max-width: 200px;
+    }
+
+    .right {
+        text-align: center;
+    }
+
+    #about h2 {
+        font-size: 24px;
+    }
+}
+
+
+
+.left img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.right {
+    text-align: left;
+}
+
+
+
+/* Style the hobbies section */
+#hobbies {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#hobbies h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.hobbies-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hobby {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Set a fixed width for all hobby boxes */
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobby:hover {
+    transform: scale(1.05);
+}
+
+.hobby-image {
+    max-width: 50%;
+    border-radius: 50px;
+    margin-bottom: 20px; /* Adjust this margin as needed */
+}
+.hobby-image1 {
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 50px;
+    margin-bottom: 2px; /* Adjust this margin as needed */
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #090808;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .hobbies-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hobby {
+        max-width: 80%;
+    }
+}
+
+
+
+/* Style the contact section */
+/* Style the contact section */
+#contact {
+    background: linear-gradient(#a3d973, #0b3b5c);
+    color: #f7f7f7;
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+#contact h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #090808;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info .column {
+    flex: 1;
+}
+
+.icons .row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.icons .info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.icons .icon {
+    font-size: 20px;
+}
+
+.icons .label {
+    font-weight: bold;
+}
+
+.icons .sub-title {
+    font-size: 18px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .icons .row {
+        justify-content: center;
+    }
+
+    .icons .label {
+        text-align: center;
+    }
+}
+
+
+/* skills */
+
+section{
+    padding: 50px 10%;
+}
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skills-img{
+    width: 50%;
+    padding-left: 10rem;
+    padding-left: 10rem;
+    object-position: center;
+}
+.bars-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+.bars-box h3,span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.light-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsl(260,100%,44%,0.4);
+    border-radius: 0.5rem;
+}
+.percent-bar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--main-color);
+    border-radius: 0.6rem;
+}
+.html-bar{
+    width: 95%;
+}
+.css-bar{
+    width: 85%;
+}
+.js-bar{
+    width: 77%;
+}
+.php-bar{
+    width: 70%;
+}
+
+
+
+/* service */
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px , auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.services-box{
+    padding: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0px 2px 7px rgba(14 55 54/15%);
+}
+.services-box:hover {
+    background: #02225a;
+}
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+}
+.services-box .bx{
+    padding-top: 2rem;
+    font-size: 54px;
+    color: var(--main-color);
+}
+.services-box:hover .bx{
+    color: #22cf91;
+}
+.services-box a{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+}/*41-*/
+
+.services-box a:hover{
+    color: #8b8a8f;
+}
+
+
+/* Styling the Contact Form */
+.Contact {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.Contact-form {
+    background-color: #7483c1a9;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    width: 650px;
+    margin: 0 auto; /* Center horizontally within its container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.Contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin: 0 auto; /* Center horizontally within its container */
+
+}
+
+.Contact-form input,
+.Contact-form textarea {
+    padding: 15px;
+    border: 1px solid #c2e1ef;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.Contact-button {
+    width: 50px; /* Adjust the button width as needed */
+    cursor: pointer;
+    background: #2768d9;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Reduced letter spacing for better readability */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border-radius: 20px; /* Increased border-radius for a curved button */
+    transition: background 0.3s;
+}
+
+
+.Contact-button:hover {
+    background: #142d57;
+    margin: left 0;;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7; /* Add a background color */
+    color: #000; /* Text color */
+    text-align: center; /* Center text content */
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    color: var(--text-color); /* Make sure --text-color is defined */
+}
+
+.footer-social a i {
+    color: var(--main-color); /* Make sure --main-color is defined */
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 40px;
+    background: #060606;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px; /* Adjust the margin to your preference */
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.copyright a {
+    color: #22cf91;
+}
+
+/* Mobile-first responsive design */
+/* Base font size and layout adjustments for small screens */
+
+body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+  }
+  
+  /* Responsive breakpoints for larger screens */
+  @media (min-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    /* Adjust the main container width for larger screens */
+    .about-container {
+      max-width: 1200px; /* Adjust this value according to your design */
+      margin: 0 auto;
+      padding: 2rem;
+    }
+  }
+  
+  /* Add more responsive adjustments as needed for other sections and elements. */
+  
+  /* Adjust fonts and spacing for larger screens */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 18px;
+    }
+    .about-text {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* You can continue to define additional responsive styles for other sections and elements as needed. */
+  
+  /* For images, you can use max-width to ensure they don't overflow the screen */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Footer adjustments for larger screens */
+  .footer {
+    text-align: center;
+  }
+  
+  /* Adjust other sections and elements as necessary to fit your design to a 15.6-inch screen size. */
+  
+  /* Add any specific styles or adjustments for the larger screen size as needed. */
+  
+.footer{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    color: #000;
+}
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    color: var(--text-color);
+
+}
+.footer-social a i {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
