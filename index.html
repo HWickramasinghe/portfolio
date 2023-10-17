@@ -16,9 +16,10 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#services"></a>Services</li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#Contact">Contact</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -30,9 +31,7 @@
           <div class="text-two"> I'm Hashini </div>
           <div class="text-three">Front-end Web Developer| UI/UX Designer</div>
           </div>
-        <div class="button">
-          <!-- <button>Hire Me</button> -->
-        </div>
+        
       </div>
     </section>
 
@@ -67,78 +66,10 @@
             </div>
           </div>
     
-          <style>
-             
-.about-container{
-    display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    gap: 1rem;
-    margin-top: 2rem;
-}
-.about-img img {
- width: 80%;
- border-radius: 0.7rem;
- margin-left: 0;
- margin-right: 5;
-}
-.about-text{
-    font-size: var(--p-font);
-    font-weight: 400;
-    text-align: justify;
-}
-.information{
-    margin: 1rem 0 1.4rem;
-}
-.information .info-box{
-    display: flex;
-    align-items: center;
-    margin-bottom:1.4rem; 
-}
-.information .info-box span{
-    font-weight: 400;
-    margin-left: 1rem;
-}
-          </style>
+          
 
 <style>
-  .about-text {
-    animation: fadeIn 1.5s ease-in;
-  }
-
-  .info-box {
-    animation: slideIn 1s ease-in;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  @keyframes slideIn {
-    0% {
-      transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-
-  #myImage {
-  cursor: pointer;
-  transition: transform 0.3s;
-  transform-origin: center;
-}
-
-#myImage.popup {
-  transform: scale(1.2);
-}
+ 
 
 </style>
 
@@ -152,8 +83,7 @@
 
 
 </script>
-    <!--22min-->
-      </div>
+   
     </section>
     
 
@@ -196,8 +126,9 @@
               <div class="percent-bar php-bar"></div>
             </div>
          </div>
-         <div class="skills-img">
-          <img src="img/skills.png" alt="" width="200" height="150">
+       
+         <div class="column large-6 tab-full">
+          <img width="500" height="600" class="pull-left animated-image" alt="sample-image" src="img/skills.png">
       </div>
       
       
@@ -215,22 +146,21 @@
 </section>
 <div class="services-container">
     <div class="services-box">
-        <i class="bx bx-code-alt"></i>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAdZJREFUSEvV1s+LTlEcx/HXlB8bbCZK+Qs0NQspm1mzQMmCjSyGkqT8BcxfgLIgUrIQJYUFs7VRslDkH1CSbGaaBVnoq3Prdjr3Puc+z9MzzXd177nfc97n++vzPHM2yeY2iWtLg8/gBz5gozaD04h4DbvxABdnBT6ILwm2jIezAgcsIg2LS3ydFTigAV/Hnlpo+E1a40hzRPoWx6YNvoIFXMoOjoaKxgq7gZX0fBefcafvIn0R70j1O5cOiI5t6hlLR/EmfYvnVVzA/bT2OL3/KV2gC7wfr3AobfqJ03jXOiSivJ7eo75R5yU8x960/hEn8D2Hl8BH8LJic0QbkUadoxSNlS59Eu/b8Bwc9byJbRXp6hOOvEx/ca1d9zb4LJ4kYNTlKu51NEitcFzGLWxP54S8PsvHaQi4VjhiEm4jMhBWBMeH2lSPEo5BqW6yGp35AvM9ndknHHlz/cKpbCI6lesAXmOxME5dwhGu+Th9wnF8qxmnxmcnHqW6xFojICXhaPa0BeQpzuP3EAFp++aSWRKOtv/EktkxSf9lsiQcXf7F9XF+ncb6xzGkxqWb1grHyOiHRlwrHFMHjxKOkcDGYWjEu3AY+xDjMrYNBY8NmrS5tj74H7PKbh+udjK0AAAAAElFTkSuQmCC"/>
         <h3>Web Development</h3>
     </div>
     
       <div class="services-box">
-        <i class='bx bx-server'></i>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAApxJREFUSEvF1k2oj3kUB/DPZeHdNCuJDMWGRs1ikCyUl4UsZCFhNBY0FpNiyMI7JfKWxRQbIVKSLGzMTMiYlZTNvCIb0yyERsPCeOnczl/P/d//c5/nPql76lk8v98553vef6fLAFHXAOGqAxw88zELg3Ejv6LNcxHfG/yCn6ocqgKejvOYVlC0G7vaFMf/zsLZXSzHX2UG9AX8ZXo2vE24DnCIPM8o/dEJvAx4GP7E+BQ6hD14URHCURmNjcn3Oz7H/+1yZcAbcCyZQ8nRqpy13W9PQ+N4ZaarB0sZ8A9ZUE8wtpPFFYYMRciOwFmsruvxPxiDc1jVT29b7FexCL+2FWf3fZnH0RaDcABbGwIfx7f4F5/U8TgK62UybkYUVhMK2YMpGJ3xqqikk8fRu/eSqWNh1LQi8no6eafityrg77E+mcbh75pA7Wyf4VEeRle0WqxXjifhG2xJ5itY0hC0JXYNCwrgkfduY4qh3ottyfQMM/saeTUNiuHxM0Yn/4epVwSOwx3J8BRz2vNSE6zIFsA38WkexvTrnulF4IkJvCaZog8XNwArivyIeXiHiOipTqFuCZzBV/kTs/pxQ/DJhVQdwaaqqp6N2x+hndbiZOqZgvtVwJGPyHHQdzjc0OOYePtTNhaIt1XAcf8fYtoEaIA3oZCN3g1dI9sVlM3qh4i+vohlTVBxCUvxAJHvHlQGfDmHR/RzvFKv+wk+JJ/F8LSj8WXA63AiwaIaoyr7QzGIon2Cvi7M7A86yoDD4lh9JiRnFEko6vHCdLAkJtS+fA7jOvatGCK9ItbXsvcFbuUWUcToz7IXYzcc6EVV621YewHxrLWoDvAdrGi63raAYhNZiBm5lfS10EdIY6G/XlUQVR5XyTe+HzDg97ogeR9aQdtdAAAAAElFTkSuQmCC"/>
           <h3>Backend Development</h3>
       </div>
     
         <div class="services-box">
-          <i class='bx bx-brush' ></i>
-            <h3>UX/UI Design</h3>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAQZJREFUSEvt1j1OAzEQhuEn1BScgJ9D0MMRaEBKQwmn4O8SSHQIQUPDDcgN6ClIuAINJciRLS0WYh3k1QaxLr2j751vtJ6ZkZ7OqCeupQJvYKtyJaZ4bWo2Ha/gDgeVoUnuBof4CBdN8Bi3HUGT7B4ecvAJzmPEbuUEHqPeKS5y8BnCh/y+Rg7z8kZjgfOl1AO4RomTxlDq4ef6x+84tc5aTyp1xKD7Y+eqBcx1lgt8jMuurEbdI1zlQ2INT9jsCP6Mbbx9N/5WsY/1FnhILmwT4Vxj1hL/gnu8p7jfLns7SMM9LA2TRav0J8BptLWZKzJTFBRJvYHnHafgFMUt4riAWR7SG/gTIHdAH9YjoMUAAAAASUVORK5CYII="/>            <h3>UX/UI Design</h3>
         </div> 
       
       <div class="services-box">
-        <i class='bx bxl-android'></i>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAOpJREFUSEvt1jFKA0EUxvHfClpYmbPYiJ05g5BrmANE0Eps9BySeAEPoaV4iQRSCFYyEEHi7s6+hLgpZtt93/zf+5j5eJWevqonrhz4DEMcBRv8wBRfTbo28DVugsDf5a9IjdfCm8AH+Nxg0vU+LzGra74JfIL5SjDGY2DyTtoC/nG0k10N9nfSFquL1cmB8o5zIVaeU23OlwDZ+wA5xR1ecL92zXd6qx9whQUG/wnubeK2ENnK6rTsLXGci6nM/xGeIsteqp3gdgvwG85X2+qfY3ILfRJe4DDYwDueN13og6xYeW7i2GmB6m8/gmYf8a2MqAAAAABJRU5ErkJggg=="/>
         <h3>App Development</h3>
     </div>  
 </div>
@@ -238,56 +168,73 @@
 
 
 
+<section id="hobbies">
+  <h2><br><br>Hobbies<br><br></h2>
+  <div class="hobbies-content">
+      <div class="hobby">
+          <img class="hobby-image" src="img/paint.jpg" alt="Painting" style="width: 300px; height: 350px;">
+          <h3><br>Painting<br></h3>
+          <p>Painting is a relaxing and creative hobby that allows me to express myself through colors and shapes.</p>
+      </div>
 
-    <section id="hobbies">
-      <h2><br><br>Hobbies</h2>
-        <div class="hobbies-content">
-            
-            <div class="hobby">
-                <img class="hobby-image1" src="img/paint.jpg" alt="Painting">
-                <h3>Painting</h3>
-                <p>Painting is a relaxing and creative hobby that allows me to express myself through colors and shapes.</p>
-            </div>
+      <div class="hobby">
+          <img class="hobby-image" src="img/sing.jpg" alt="Singing"style="width: 300px; height: 350px;">
+          <h3><br>Singing<br></h3>
+          <p>Singing brings joy to my life. I love to sing and explore various genres of music.<br><br></p>
+      </div>
+      <div class="hobby">
+        <img class="hobby-image" src="img/Photography-Camera-HD-Wallpaper1.jpg" alt="Photography" style="width: 300px; height: 350px;">
+        <h3><br>Photography<br></h3>
+        <p>Photography is another hobby that you enjoy. Describe your passion for it.<br><br></p>
+    </div>
     
-            <div class="hobby">
-                <img class="hobby-image" src="img/sing.jpg" alt="Singing">
-                <h3>Singing</h3>
-                <p>Singing brings joy to my life. I love to sing and explore various genres of music.</p>
-            </div>
-            <div class="hobby">
-                <img class="hobby-image1" src="img/Photography-Camera-HD-Wallpaper1.jpg" alt="Photography">
-                <h3>Photography</h3>
-                <p>Photography is another hobby that you enjoy. Describe your passion for it.</p>
-            </div>
-        </div>
-    </section>
-    
+  </div>
+</section>
+
+
+    <!-- contact me -->
    
     <section class="Contact" id="Contact">
-        <div class="heading">
-          <h2><br><br>Contact Me</h2>
-          
-        </div>
-        <div class="Contact-form">
-          <form action="#">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Write Message..."></textarea>
-            <input type="button" value="Send" class="Contact-button">
-      
-          </form>
-        </div>
-      </section>
-      <div class="footer">
-          <h2>Follow me</h2>
-          <div class="footer-social">
-            <i class='bx bxl-facebook' ></i>
-            <a href="#"><i class="bx bxl-facebook"></i></a>
-            <a href=""><i class='bx bxl-twitter'></i></a>
-            <a href=""><i class='bx bxl-instagram' ></i></a>
-            <a href=""><i class='bx bxl-youtube' ></i></a>
-          </div>
+      <div class="heading">
+          <h2>Contact Me<br><br></h2>
       </div>
+      <div class="Contact-form">
+          <form action="#">
+              <input type="text" placeholder="Your Name">
+              <input type="email" placeholder="Your Email">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Write Message..."></textarea>
+              <input type="button" value="Send" class="Contact-button">
+          </form>
+      </div>
+  </section>
+  
+      <div class="footer">
+        <h2>Follow me</h2>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAXVJREFUSEvt1r9LlVEcx/GX0BCBQ0JL4KDS4miQDSoqODm6BYLQUBSBQ2IgYjSI6KCDmH+A4FaLi5QYtQVFW0M/JnPUoAZdJI48wsMX7xXiXO6l7nd7Puc83/f5fM/3nOdpUadoqRNXw4EncA07+FiLqpzn+B36SrBxbOSGR/A9rAfIZ3TXGjyHpwHyG621BvfjbYBs4k6twSn/fTzBdbzEXSTXWaPhjtPfumvDDfzAXrUk0XEHvocX1vCw0B5jKYxfxQBSY/aUxn5hG+mkHMRF5ABPYqWKu6+4hcPynBzgI1y+YG9mMJ8bnPKd4Bv2i7JHQ+navZkbnBynK/ZDkXgQr3CpBEoLu4LjMy1HqVfxKJR6C6NBS92e9vs0coDH8CJAlpGarhy9eJ8TPILXATKLZ0EbwptK4M6iScrvPMeDQpjCYkg4jN2gTWOhCW6WutwD/19zpcv+djgG6dv6pdDa0RXGP+Fn0C6c98/8gQTjlR/r5vgPzo1yH1gxDtsAAAAASUVORK5CYII="/></a>            
+          <a href="https://www.facebook.com/profile.php?id=100091275077149&mibextid=ZbWKwL"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPdJREFUSEvt1j1KQ0EUxfHfQ+ws04gLEMHGHRhwA7Y2pjFZhH12oJggmM4dpAvqElIouIFgbARTiiBPLIagvA99bxTftPdy/3POXA6TiHSSSFx/FryCHaxhgUc84CXLye8o3scJ1pcgt9iuCtzBxRfDKwOvYoZW3eBdXC1B7zHG88c7n1Zh9SFGweA5NvCaBQvrZZari0Ew5AapC4VOGXAPZwHlGu1CVEoFSK3gO2zlVHWJg6zevFYXAfdxHAN8hPMY4D1MfgoczkkVDWNsdQOuLUAaqxurs7LjvZ43q39FgKS/ys3gJk+Y5pIZNJVRXJTxaf//A78BOAw2H9IcdF0AAAAASUVORK5CYII="/></a>
+          <a href="https://twitter.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAe5JREFUSEvt1kuozVEUx/HPjYEkz+KWV5SkxAATrzwiKQORDBQpA4UUZSAGd0ApCZGpibeMJBOFgcREhkwoSZlIeRet2vd077/zP3ufzsmZ3F27/2Cv/fvutfbaa/379Gj09YhrBPzfIt+NUE/AZSzHTPzAOZzGt+TJtPT9NOhZFTwWV7AXfwrcn46nmNPE9gOuYyHGY8VQmyp4G+7gHnYUwO9jc+aAb7ApReNxnccHcSEtPscuvK0RXooXBVF5h35sxYM68Go0ToWfOImL+F6BHML5AvDn5MDDVqEeg68YXRGMJLmLa3iFjziBgQLwGRyr2jXL6v0pS1tpfkHMWQXg4ziVA+/BIizGugLREpPQvJoDb8SwuyhRztjE+36WA8fdRhbP7gIwJOI6JuFvDhzrq9I7ntIF+E3sbKZTVzKjIh3BPozr4ABrKs+zIVUHPoDtWNIB+CWW1R26DrwArzGqA2/X41G74LDfghuIxtHuOIujrTbl2uJURNjXYmUh/Qk24Fcn4GhnkWSHU2vLsSNCu3PQEBnq8eRUsaKZz08zqle8w9yI9xql8VLOcHC9GurI5Kir8woFfuNWikrj76Jkb90dh6fR4OPPYgbmYiKixcV8n4rM7VSdSljDbHLJ1bZg6YYRcGmkOrbrWaj/AVe4TB8KwZmFAAAAAElFTkSuQmCC"/></a>
+          <a href="https://youtube.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAaRJREFUSEvt1j9IVlEYx/GPGARh1NASLaHUVkubOLQkYWRjY0RUICRCuhj9oT821JC4NERDo1NBFAUN0RqEaIRITQ3i4FYOFsUD98LtoLznfXlvr4PPcjmX5/y+PL/znD9dOhRdHeLaBv8357eU1TtwGv34UViwD4ews4ElP7GA+Eb8wRxe4ld1blrxUbzAwTZ7/g3D+FzqpuAPGGgztJR7g5MbgQ/ge03QUnY/lmNQrfgE3tYMPo73Kfg8nmaAowd6cSQjN005i9kUfBUPM8Ru4B4uYArR8blxEU9S8C3czFAI8J0iby9uYwTdGXNHMZOCo9qoulFUwWXuYUxXu3YTkYnS1Wpz3cW1RlRcR+RWIw6XRxhqMH8S91u1ugreXVh9JdPqscKZf7bTOB5kVhxNdalY62aa6xyepRVfxuMM8HP0tbidYilep+AzCNE6I+6C+RQcnblYJxW7sJaCY/wRx2qCv8KpUju9nQL6DnvaDP9a3PFfNgPH/x4MYrV4DMSZHLdKM7GCJazjU/EQ+F0V2FJPn2Yqazl3u+KWrWt2Yses/gukJj8f6HDQbQAAAABJRU5ErkJggg=="/></a>
+          <a href="https://www.instagram.com/invites/contact/?i=12fvo5r0zl5hu&utm_content=o273npz"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAvVJREFUSEvl1ksIVVUUBuDPntADDJKy7EFYoaCp1aSwxJqVJBIURPmAGjizwkBKrAiFipwIDco0IXBQSZaTgkiDoqdIUkgNIiuCIElrlsUv68bhdM59NDFow+XC2Xuvf61//XutNcVJWlNOEq7/PPB0zMSpIxj6A1/jx1FMDov4QjyN23DeKEOt/V/wFtb2OdEHHLCdOLsM/obPkYiGrTOwAGfWoWO4C3val7qAz8I3SMQv4Xl8OgbowPZpWIjH6/8HXInfm+BdwLmwviK+e0KKc/xeToj2ZbyLReXEhlHAh3FxRfzThMABDWDWykrPfnyPGcOAQ28U+RVm9YDGqTtwA/7EB3i97t2H7XVvVaXqKM7BNPw8sNmmOsJIPt+v/LSxH8AzOLe18SvWYCtWFNVf4OPSyxWYg3w7sdrAEcXeegq3t4w/VKAB2YzPcDrmFmiiCnj2mutAgYahsNMJfCveLuqWNW7PL+9D1bWVs6bxS8uRMBHWDjY2k+NrisEwORT4VdzZuPwEHsODeK4n949gEx7FU40zYSaO34R9fcC34J2OiHcj1OeXitS1wlAcbjsdzYSFPKv3+oCzmbf3JpY0rO8qJUfNb0wIHIFdh8Vlu5PqAXCMB2SwUlBSWB7Gsz3A64ri/G9snPmkdHFzCXcocDviS+ptp+zN6xDXZVUsUi6vbjWGscR1Y73h5LH9nFZjC1L482QSSZpCFJtnlBp/P15oMRKFz8b1dacz4qgvKuwrIDEcqrsKSBT/Ykca0nBSQOJg3nQncOrpd/gWl/fkMiVzKcJO2uSHeK2n755SXSltMulKH+gEzoRxpGrrReNMEj3ODT5HzVF10jO12Vq72mLoSoF/BfeMMDxqO+U3ZTh9PTb/Xl3A5+NQjTuZHJ7ERzg+CqX2B4NA7iUdGYOuanamnOsbfZZjWwPo344+MZFWuaPt9LBhL7U1Sk0Fi0gmWWEntSAvIHT/Y40zV18wZCjoc+ZLDJ1exgGeJNKxz/7/gP8C/LagH31MPSUAAAAASUVORK5CYII="/></a>
+        </div>
+    </div>
   
 </body>
 </html>
+<script>
+  // Wait for the page to load
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the Contact section element
+    const contactSection = document.querySelector(".Contact");
+
+    // Add an event listener to trigger the animation when the section is in the viewport
+    window.addEventListener("scroll", function () {
+        const sectionPosition = contactSection.getBoundingClientRect();
+
+        if (sectionPosition.top - window.innerHeight <= 0) {
+            contactSection.classList.add("fade-in");
+        }
+    });
+});
+
+</script>

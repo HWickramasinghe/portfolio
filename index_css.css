@@ -188,6 +188,77 @@ nav a:hover {
     font-size: 16px;
 }
 
+
+
+
+            
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.about-img img {
+ width: 80%;
+ border-radius: 0.7rem;
+ margin-left: 0;
+ margin-right: 5;
+}
+.about-text{
+    font-size: var(--p-font);
+    font-weight: 400;
+    text-align: justify;
+}
+.information{
+    margin: 1rem 0 1.4rem;
+}
+.information .info-box{
+    display: flex;
+    align-items: center;
+    margin-bottom:1.4rem; 
+}
+.information .info-box span{
+    font-weight: 400;
+    margin-left: 1rem;
+}
+.about-text {
+    animation: fadeIn 1.5s ease-in;
+  }
+
+  .info-box {
+    animation: slideIn 1s ease-in;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
+  #myImage {
+  cursor: pointer;
+  transition: transform 0.3s;
+  transform-origin: center;
+}
+
+#myImage.popup {
+  transform: scale(1.2);
+}
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     #home h1 {
@@ -282,8 +353,6 @@ nav a:hover {
 }
 
 
-
-/* Style the hobbies section */
 #hobbies {
     padding: 50px 0;
     text-align: center;
@@ -310,7 +379,7 @@ nav a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: 300px; /* Set a fixed width for all hobby boxes */
+    width: 300px;
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
@@ -323,15 +392,10 @@ nav a:hover {
 }
 
 .hobby-image {
-    max-width: 50%;
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
     border-radius: 50px;
-    margin-bottom: 20px; /* Adjust this margin as needed */
-}
-.hobby-image1 {
-    max-width: 50%;
-    max-height: 100%;
-    border-radius: 50px;
-    margin-bottom: 2px; /* Adjust this margin as needed */
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -351,6 +415,7 @@ h3 {
         max-width: 80%;
     }
 }
+
 
 
 
@@ -443,12 +508,6 @@ section{
     margin-top: 4rem;
 }
 
-.skills-img{
-    width: 50%;
-    padding-left: 10rem;
-    padding-left: 10rem;
-    object-position: center;
-}
 .bars-box{
     position: relative;
     display: flex;
@@ -619,16 +678,7 @@ section{
     margin: 0 10px; /* Adjust the margin to your preference */
 }
 
-.copyright {
-    padding: 20px;
-    text-align: center;
-    background: var(--main-color);
-    color: #fff;
-}
 
-.copyright a {
-    color: #22cf91;
-}
 
 /* Mobile-first responsive design */
 /* Base font size and layout adjustments for small screens */
@@ -705,4 +755,178 @@ body {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+}
+
+
+
+.footer{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    color: #000;
+}
+.footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    color: var(--text-color);
+
+}
+.footer-social a i {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+.copyright{
+    padding: 20px;
+    text-align: center;
+    background: var(--main-color);
+    color: #fff;
+}
+.copyright a {
+    color: #22cf91;
+}
+/* Responsive  54 min*/
+@media (max-width:991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}@media (max-width:881px){
+    :root{
+        --big-font:2.7rem;
+        --medium-font:1.4rem;
+    }  
+    }
+    @media (max-width:768px){
+        :root {
+            --big-font:2.4rem;
+            --medium-font:1.2rem;
+
+        }
+        header{
+            padding: 11px 4%;
+        }
+        #menu-icon{
+            display: initial;
+            color: var(--text-color);
+        }
+        header .navbar{
+            position: absolute;
+            left: 0;
+            top: -550px;
+            right: 0;
+            display: flex;
+            flex-direction: column;
+            background: var(--bg-color);
+            box-shadow: 0 4px 4px rgba(0 0 0/100%);
+            transition: 0.2s ease;
+            text-align: center;
+        }
+        .navbar .active{
+            top: 100%;
+        }
+        .navbar a {
+            padding: 1.5rem;
+            display: block;
+            background: var(--bg-color);
+        }
+        #darkmode{
+            position: absolute;
+            top: 1.4rem;
+            right: 2rem;
+        }
+        .scroll-down{
+            display: none;
+        }
+        .home{
+            grid-template-columns: 0.5fr 3fr;
+        }
+        .home-text{
+            grid-column: 1/3;
+            padding: 1.4rem;
+        }
+        .home-img{
+            order: initial; 
+        }
+        .about-container{
+           grid-template-columns: 1fr; 
+        }
+        .about-img{
+            display: flex;
+            justify-content: center;
+        }
+        .skills-container{
+            grid-template-columns: 1fr;
+        }
+        .skills-img img{
+            padding-left: 0;
+        }
+        .skills-img{
+            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+        .Contact-form form{
+            width: 300px;
+        }
+        .Contact-button{
+            margin-left: 25%;
+        }
+    }
+    @media (max-width:340px){
+        :root{
+            --big-font:1.7rem;
+            --medium-font:1.1rem;
+        }
+        .home-text span{
+       font-size: 1rem;     
+        }
+        .home-text h2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        }
+        .information .info-box {
+            font-size: 1rem;
+        }
+        .Contact-form form {
+            width: 250;
+        }
+        .Contact-button{
+            width: 20%;
+        }
+    }
+
+    /* Initial styles */
+.Contact {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animation when the section becomes visible */
+.Contact.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Define the animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the image */
+.animated-image {
+    animation: fadeIn 1s; /* You can adjust the duration (1s) as needed */
 }
